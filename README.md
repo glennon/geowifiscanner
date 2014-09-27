@@ -1,6 +1,8 @@
 geowifiscanner
 ==============
 
+GPL v3 license. Enjoy!
+
 Super primitive app to teach about data collection on Android. At its most basic, the code sends data over 'lat/long/visible SSIDs/associated wifi strength' to a php file called coordreceiver.php. That file looks something like this (it is also available at: https://github.com/NOVAGIS/novapublic/blob/master/coordreceiver.php ):
 
 
