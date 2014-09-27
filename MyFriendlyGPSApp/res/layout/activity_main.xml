@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/TextVLon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextVLat"
+        android:layout_below="@+id/TextVLat"
+        android:layout_marginTop="25dp"
+        android:text="latitude value" />
+
+    <TextView
+        android:id="@+id/TextVLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView11"
+        android:layout_alignBottom="@+id/TextView11"
+        android:layout_marginLeft="39dp"
+        android:layout_toRightOf="@+id/TextView13"
+        android:text="latitude value" />
+
+    <TextView
+        android:id="@+id/TextView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextVLon"
+        android:layout_alignBottom="@+id/TextVLon"
+        android:layout_alignLeft="@+id/TextView11"
+        android:text="Longitude:" />
+
+    <TextView
+        android:id="@+id/TextView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="62dp"
+        android:text="Latitude:" />
+
+    <EditText
+        android:id="@+id/editTextAttribute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView13"
+        android:layout_below="@+id/TextVAcc"
+        android:layout_marginTop="75dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextAttribute"
+        android:layout_alignLeft="@+id/editTextAttribute"
+        android:layout_marginBottom="40dp"
+        android:text="Attribute:" />
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginRight="50dp"
+        android:text="Collect" />
+
+    <TextView
+        android:id="@+id/TextVAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView12"
+        android:layout_below="@+id/TextView12"
+        android:layout_marginTop="33dp"
+        android:text="accuracy value" />
+
+    <TextView
+        android:id="@+id/TextView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextVAcc"
+        android:layout_alignLeft="@+id/TextVAcc"
+        android:layout_marginBottom="13dp"
+        android:text="Accuracy (m):" />
+
+    <EditText
+        android:id="@+id/editTextUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonGo"
+        android:layout_alignLeft="@+id/editTextAttribute"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextUser"
+        android:layout_alignLeft="@+id/editTextUser"
+        android:text="User:" />
+
+    <TextView
+        android:id="@+id/TextVWifiLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView13"
+        android:layout_alignBottom="@+id/TextView13"
+        android:layout_alignRight="@+id/editTextAttribute"
+        android:text="Wifi Strength:" />
+
+    <TextView
+        android:id="@+id/TextVWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextVWifiLabel"
+        android:layout_below="@+id/TextVWifiLabel"
+        android:text="strength value" />
+
+</RelativeLayout>
