@@ -19,3 +19,5 @@ Super primitive app to teach about data collection on Android. At its most basic
   file_put_contents($File, $Data, FILE_APPEND | LOCK_EX); 
 
 ?>
+
+As it stands, the app has no error catching. So, expect crashes if the device has wifi turned off (and similar states).
