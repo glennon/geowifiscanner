@@ -1,23 +1,10 @@
 geowifiscanner
 ==============
 
-GPL v3 license. Enjoy! http://www.gnu.org/copyleft/gpl.html
+Primitive example Android app (with a php / text file backend) to teach about data collection. The code sends data including 'lat/long/visible SSIDs/associated wifi strength' and saves it to a space-delimited text file with each line possessing the format:
 
-Super primitive Android app (with a php / text file backend) to teach about data collection on Android. At its most basic, the code sends data over 'lat/long/visible SSIDs/associated wifi strength' to a php file called coordreceiver.php. That file looks something like this (it is also available at: https://github.com/NOVAGIS/novapublic/blob/master/coordreceiver.php ):
-
-
-<?php
-  $newlat = $_POST["lat"];
-  $newlon = $_POST["lon"];
-  $newacc = $_POST["acc"];
-  $newatt = $_POST["att"];
-  $newuse = $_POST["use"];  
-  $newstr = $_POST["str"];
-  
-  $File = "wifistrength.txt"; 
-  $Data = time()." ".$newlat." ".$newlon." ".$newacc." ".$newatt." ".$newuse." ".$newstr."\r\r"; 
-  file_put_contents($File, $Data, FILE_APPEND | LOCK_EX); 
-
-?>
+lat lon accuracy att use string
 
 As it stands, the app has no error catching. So, expect crashes if the device has wifi turned off (and similar states).
+
+License clarification forthcoming.
