@@ -6,5 +6,3 @@ Primitive example Android app (with a php / text file backend) to teach about da
 `lat lon accuracy att use string`
 
 As it stands, the app has no error catching. So, expect crashes if the device has wifi turned off (and similar states).
-
-License clarification forthcoming.
